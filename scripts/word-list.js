@@ -1,262 +1,219 @@
 const wordList = [
     {
-        word: "guitar",
-        hint: "A musical instrument with strings."
+        word: "programming",
+        hint: "Creating computer programs."
     },
     {
-        word: "oxygen",
-        hint: "A colorless, odorless gas essential for life."
+        word: "algorithm",
+        hint: "Step-by-step procedure for problem-solving in computing."
     },
     {
-        word: "mountain",
-        hint: "A large natural elevation of the Earth's surface."
+        word: "database",
+        hint: "Organized data collection accessed electronically."
     },
     {
-        word: "painting",
-        hint: "An art form using colors on a surface to create images or expression."
+        word: "encryption",
+        hint: "Converting data into code for security."
     },
     {
-        word: "astronomy",
-        hint: "The scientific study of celestial objects and phenomena."
+        word: "server",
+        hint: "Provides resources or services over a network."
     },
     {
-        word: "football",
-        hint: "A popular sport played with a spherical ball."
+        word: "cybersecurity",
+        hint: "Protecting computer systems from digital attacks."
     },
     {
-        word: "chocolate",
-        hint: "A sweet treat made from cocoa beans."
+        word: "programminglanguage",
+        hint: "Formal system for computer instruction."
     },
     {
-        word: "butterfly",
-        hint: "An insect with colorful wings and a slender body."
+        word: "cloudcomputing",
+        hint: "Internet-based delivery of computing services."
     },
     {
-        word: "history",
-        hint: "The study of past events and human civilization."
+        word: "network",
+        hint: "Connected computers and devices for sharing resources."
     },
     {
-        word: "pizza",
-        hint: "A savory dish consisting of a round, flattened base with toppings."
+        word: "frontend",
+        hint: "User-interaction part of an application or website."
     },
     {
-        word: "jazz",
-        hint: "A genre of music characterized by improvisation and syncopation."
+        word: "backend",
+        hint: "Handles data processing and storage in a system."
     },
     {
-        word: "camera",
-        hint: "A device used to capture and record images or videos."
+        word: "api",
+        hint: "Rules and tools for building software applications."
     },
     {
-        word: "diamond",
-        hint: "A precious gemstone known for its brilliance and hardness."
+        word: "bug",
+        hint: "Error, flaw, or unintended behavior in a program."
     },
     {
-        word: "adventure",
-        hint: "An exciting or daring experience."
+        word: "debugging",
+        hint: "Finding and fixing errors in a computer program."
     },
     {
-        word: "science",
-        hint: "The systematic study of the structure and behavior of the physical and natural world."
+        word: "coderepository",
+        hint: "Place to store and manage source code."
     },
     {
-        word: "bicycle",
-        hint: "A human-powered vehicle with two wheels."
+        word: "responsivedesign",
+        hint: "Designing for optimal viewing on various devices."
     },
     {
-        word: "sunset",
-        hint: "The daily disappearance of the sun below the horizon."
+        word: "apikey",
+        hint: "Code identifying a program calling an API."
     },
     {
-        word: "coffee",
-        hint: "A popular caffeinated beverage made from roasted coffee beans."
+        word: "agiledevelopment",
+        hint: "Flexible and collaborative software development."
     },
     {
-        word: "dance",
-        hint: "A rhythmic movement of the body often performed to music."
+        word: "machinelearning",
+        hint: "AI allowing computers to learn from experience."
     },
     {
-        word: "galaxy",
-        hint: "A vast system of stars, gas, and dust held together by gravity."
+        word: "framework",
+        hint: "Pre-built code for efficient application development."
     },
     {
-        word: "orchestra",
-        hint: "A large ensemble of musicians playing various instruments."
+        word: "virtualization",
+        hint: "Creating a virtual version, like virtual machines."
     },
     {
-        word: "volcano",
-        hint: "A mountain or hill with a vent through which lava, rock fragments, hot vapor, and gas are ejected."
+        word: "itsupport",
+        hint: "Assistance for technology-related issues."
     },
     {
-        word: "novel",
-        hint: "A long work of fiction, typically with a complex plot and characters."
+        word: "firewall",
+        hint: "Network security system controlling traffic."
     },
     {
-        word: "sculpture",
-        hint: "A three-dimensional art form created by shaping or combining materials."
+        word: "responsivewebdesign",
+        hint: "Designing websites for various device views."
     },
     {
-        word: "symphony",
-        hint: "A long musical composition for a full orchestra, typically in multiple movements."
+        word: "userauthentication",
+        hint: "Verifying a user's identity with credentials."
     },
     {
-        word: "architecture",
-        hint: "The art and science of designing and constructing buildings."
+        word: "databackup",
+        hint: "Creating copies to prevent data loss."
     },
     {
-        word: "ballet",
-        hint: "A classical dance form characterized by precise and graceful movements."
+        word: "itinfrastructure",
+        hint: "Hardware, software, networks enabling IT operations."
     },
     {
-        word: "astronaut",
-        hint: "A person trained to travel and work in space."
+        word: "devops",
+        hint: "Integrating software development and IT operations."
     },
     {
-        word: "waterfall",
-        hint: "A cascade of water falling from a height."
+        word: "apiendpoint",
+        hint: "Specific URL for API operations."
     },
     {
-        word: "technology",
-        hint: "The application of scientific knowledge for practical purposes."
+        word: "rootaccess",
+        hint: "Highest level of control over a system."
     },
     {
-        word: "rainbow",
-        hint: "A meteorological phenomenon that is caused by reflection, refraction, and dispersion of light."
+        word: "opensource",
+        hint: "Software with publicly available source code."
     },
     {
-        word: "universe",
-        hint: "All existing matter, space, and time as a whole."
+        word: "userinterface",
+        hint: "Interaction point between user and program."
     },
     {
-        word: "piano",
-        hint: "A musical instrument played by pressing keys that cause hammers to strike strings."
+        word: "apidocumentation",
+        hint: "Information to understand and use an API."
     },
     {
-        word: "vacation",
-        hint: "A period of time devoted to pleasure, rest, or relaxation."
+        word: "scriptinglanguage",
+        hint: "Language for writing interpreted scripts."
     },
     {
-        word: "rainforest",
-        hint: "A dense forest characterized by high rainfall and biodiversity."
+        word: "rootcauseanalysis",
+        hint: "Identifying and addressing underlying issues."
     },
     {
-        word: "theater",
-        hint: "A building or outdoor area in which plays, movies, or other performances are staged."
+        word: "uxdesign",
+        hint: "Enhancing user satisfaction in product interaction."
     },
     {
-        word: "telephone",
-        hint: "A device used to transmit sound over long distances."
+        word: "malware",
+        hint: "Software aiming to disrupt or damage systems."
     },
     {
-        word: "language",
-        hint: "A system of communication consisting of words, gestures, and syntax."
+        word: "protocol",
+        hint: "Set of rules for communication between devices."
     },
     {
-        word: "desert",
-        hint: "A barren or arid land with little or no precipitation."
+        word: "datamining",
+        hint: "Analyzing large data sets for patterns and insights."
     },
     {
-        word: "sunflower",
-        hint: "A tall plant with a large yellow flower head."
+        word: "cyberthreat",
+        hint: "Potential malicious act against digital operations."
     },
     {
-        word: "fantasy",
-        hint: "A genre of imaginative fiction involving magic and supernatural elements."
+        word: "databreach",
+        hint: "Unauthorized access leading to sensitive data exposure."
     },
     {
-        word: "telescope",
-        hint: "An optical instrument used to view distant objects in space."
+        word: "itgovernance",
+        hint: "Framework for effective use of IT resources."
     },
     {
-        word: "breeze",
-        hint: "A gentle wind."
+        word: "versioncontrol",
+        hint: "Managing changes to documents, code, or information."
     },
     {
-        word: "oasis",
-        hint: "A fertile spot in a desert where water is found."
+        word: "cloudsecurity",
+        hint: "Measures to protect data and applications in the cloud."
     },
+ 
     {
-        word: "photography",
-        hint: "The art, process, or practice of creating images by recording light or other electromagnetic radiation."
+        word: "apiGateway",
+        hint: "A server that acts as an API front-end, receiving API requests, enforcing throttling and security policies, passing requests to the back-end service, and passing the response back to the requester."
     },
     {
-        word: "safari",
-        hint: "An expedition or journey, typically to observe wildlife in their natural habitat."
+        word: "containerization",
+        hint: "A lightweight, executable software package that includes everything needed to run a piece of software, including the code, runtime, libraries, and system tools."
     },
     {
-        word: "planet",
-        hint: "A celestial body that orbits a star and does not produce light of its own."
+        word: "loadbalancing",
+        hint: "The process of evenly distributing incoming network traffic across multiple servers to ensure no single server is overwhelmed, optimizing resource utilization and minimizing response time."
     },
     {
-        word: "river",
-        hint: "A large natural stream of water flowing in a channel to the sea, a lake, or another such stream."
+        word: "microservices",
+        hint: "An architectural style that structures an application as a collection of small, independent services that can be developed, deployed, and scaled independently."
     },
     {
-        word: "tropical",
-        hint: "Relating to or situated in the region between the Tropic of Cancer and the Tropic of Capricorn."
+        word: "sqlinjection",
+        hint: "A type of attack where malicious SQL statements are inserted into an entry field for execution, often leading to unauthorized access to the database."
     },
     {
-        word: "mysterious",
-        hint: "Difficult or impossible to understand, explain, or identify."
+        word: "hashing",
+        hint: "The process of converting input data (such as passwords) into a fixed-size string of characters, usually for security purposes."
     },
     {
-        word: "enigma",
-        hint: "Something that is mysterious, puzzling, or difficult to understand."
+        word: "rootkit",
+        hint: "A type of malicious software designed to provide continued access to a computer while actively hiding its presence."
     },
     {
-        word: "paradox",
-        hint: "A statement or situation that contradicts itself or defies intuition."
+        word: "scalability",
+        hint: "The capability of a system to handle a growing amount of work, or its potential to be enlarged to accommodate that growth."
     },
     {
-        word: "puzzle",
-        hint: "A game, toy, or problem designed to test ingenuity or knowledge."
+        word: "sandboxing",
+        hint: "A security mechanism that provides a restricted environment for executing untrusted or untested code, isolating it from the rest of the system."
     },
     {
-        word: "whisper",
-        hint: "To speak very softly or quietly, often in a secretive manner."
-    },
-    {
-        word: "shadow",
-        hint: "A dark area or shape produced by an object blocking the light."
-    },
-    {
-        word: "secret",
-        hint: "Something kept hidden or unknown to others."
-    },
-    {
-        word: "curiosity",
-        hint: "A strong desire to know or learn something."
-    },
-    {
-        word: "unpredictable",
-        hint: "Not able to be foreseen or known beforehand; uncertain."
-    },
-    {
-        word: "obfuscate",
-        hint: "To confuse or bewilder someone; to make something unclear or difficult to understand."
-    },
-    {
-        word: "unveil",
-        hint: "To make known or reveal something previously secret or unknown."
-    },
-    {
-        word: "illusion",
-        hint: "A false perception or belief; a deceptive appearance or impression."
-    },
-    {
-        word: "moonlight",
-        hint: "The light from the moon."
-    },
-    {
-        word: "vibrant",
-        hint: "Full of energy, brightness, and life."
-    },
-    {
-        word: "nostalgia",
-        hint: "A sentimental longing or wistful affection for the past."
-    },
-    {
-        word: "brilliant",
-        hint: "Exceptionally clever, talented, or impressive."
+        word: "vpn",
+        hint: "Virtual Private Network - a secure connection between two or more devices or networks over the internet, providing privacy and security."
     },
 ];
