@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", sans-serif;
+}
+
+body {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #12372A; /* Darker background */
+}
+
+footer {
+  background:#12372A;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column; /* Adjusted to column layout */
+  align-items: center;
+  gap: 20px; /* Increased gap */
+  padding: 40px;
+  background: white; /* Darker container background */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.1); /* Neon-green shadow */
+}
+
+.points-guess-box {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Centered points and guess boxes */
+  width: 100%; /* Full width */
+}
+
+.points-box,
+.guess-box {
+  text-align: center;
+}
+
+.points-box input,
+.guess-box input {
+  background-color: #436850; /* Darker background color */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  width: 70px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.hangman-box img {
+  user-select: none;
+  max-width: 270px;
+}
+
+.hangman-box h1 {
+  font-size: 1.45rem;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.game-box .word-display {
+  margin-top: 50px;
+  gap: 10px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.word-display .letter {
+  margin-top: 5px;
+  width: 28px;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #000000;
+}
+
+.word-display .letter.guessed {
+  margin: -40px 0 35px;
+  border-color: transparent;
+}
+
+.game-box h4 {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.game-box h4 b {
+  font-weight: 600;
+}
+
+.game-box .guesses-text b {
+  color: #ff0000;
+}
+
+.game-box .keyboard {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+:where(.game-modal, .keyboard) button {
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: #436850;
+}
+
+.keyboard button {
+  padding: 7px;
+  width: calc(100% / 9 - 5px);
+}
+
+.keyboard button[disabled] {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+:where(.game-modal, .keyboard) button:hover {
+  background: #00455a;
+}
+
+.game-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 0 10px;
+  transition: opacity 0.4s ease;
+}
+
+.game-modal.show {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.4s 0.4s ease;
+}
+
+.game-modal .content {
+  padding: 30px;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 10px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.game-modal img {
+  max-width: 130px;
+  margin-bottom: 20px;
+}
+
+.game-modal img[src="images/victory.gif"] {
+  margin-left: -10px;
+}
+
+.game-modal h4 {
+  font-size: 1.53rem;
+}
+
+.game-modal p {
+  font-size: 1.15rem;
+  margin: 15px 0 30px;
+  font-weight: 500;
+}
+
+.game-modal p b {
+  color: #5E63BA;
+  font-weight: 600;
+}
+
+.game-modal button {
+  padding: 12px 23px;
+  margin-top: 15px; /* Added margin-top */
+  background-color: #5E63BA;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.game-modal button:hover {
+  background-color: #1d0052;
+}
+
+#hintButton {
+  margin-left: 175px;
+  padding: 12px 20px;
+  background-color: #436850;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 15px; /* Added margin-top */
+}
+
+#hintButton:hover {
+  background-color: #1d0052;
+}
+
+#resetButton {
+  padding: 12px 20px;
+  background-color: #436850;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#resetButton:hover {
+  background-color: #1d0052;
+}
+  
+  /* Added styles for the compressed container when game starts */
+  .game-started .container {
+    width: 50vw; /* Adjust the compressed width as needed */
+  }
