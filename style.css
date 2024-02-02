@@ -95,6 +95,7 @@ footer {
   margin-bottom: 40px;
   text-transform: uppercase;
   border-bottom: 3px solid #000000;
+  max-wdith: 300px;
 }
 
 .word-display .letter.guessed {
